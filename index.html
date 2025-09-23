@@ -15,21 +15,22 @@
         justify-content: center;
         align-items: center;
         min-height: 100vh;
-        text-align: center;
+        text-align: right;
+        direction: rtl;
         padding: 20px;
     }
     .container {
-        background: rgba(0,0,0,0.65);
+        background: rgba(0,0,0,0.75);
         border-radius: 20px;
         padding: 50px 30px;
         max-width: 750px;
-        box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+        box-shadow: 0 10px 35px rgba(0,0,0,0.5);
     }
-    h1 { font-size: 3em; margin-bottom: 10px; }
-    p.description { font-size: 1.2em; margin-bottom: 30px; line-height: 1.6; }
+    h1 { font-size: 3em; margin-bottom: 15px; }
+    p.description { font-size: 1.2em; margin-bottom: 30px; line-height: 1.8; }
     .download-btn {
         display: inline-block;
-        padding: 15px 40px;
+        padding: 15px 50px;
         font-size: 1.2em;
         color:#fff;
         text-decoration:none;
@@ -37,26 +38,27 @@
         background: linear-gradient(45deg, #ff6b6b, #ff4757);
         transition:0.3s;
         margin-bottom: 40px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.3);
     }
     .download-btn:hover {
         transform: scale(1.05);
-        box-shadow:0 8px 25px rgba(0,0,0,0.5);
+        box-shadow:0 10px 30px rgba(0,0,0,0.5);
     }
-    .features { text-align: left; margin-bottom: 40px; }
+    .features { text-align: right; margin-bottom: 40px; }
     .features h2 { color: #ffd93b; margin-bottom:15px; }
-    .features ul { list-style:none; padding-left:0; }
+    .features ul { list-style: disc; padding-right:20px; }
     .features li { margin-bottom:12px; font-size:1.1em; }
-    
+
     /* اسلایدر */
     .slider {
         position: relative;
         width: 100%;
         max-width: 600px;
-        height: 200px;
+        height: 220px;
         margin: 0 auto 40px auto;
         overflow: hidden;
         border-radius: 15px;
-        box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        box-shadow: 0 5px 20px rgba(0,0,0,0.4);
     }
     .slides {
         display: flex;
@@ -76,7 +78,7 @@
         66% { transform: translateX(-200%); }
         100% { transform: translateX(0%); }
     }
-    footer { font-size:0.9em; color:#ccc; }
+    footer { font-size:0.9em; color:#ccc; text-align: center; }
 
     @media(max-width:600px){
         h1 { font-size:2em; }
@@ -88,14 +90,14 @@
 <body>
     <div class="container">
         <h1>Player-Neo</h1>
-        <p class="description">Music Player حرفه‌ای برای ویندوز با طراحی مدرن و رابط کاربری ساده. تجربه‌ای عالی برای پخش موزیک و ویدیو.</p>
+        <p class="description">یک موزیک پلیر حرفه‌ای برای ویندوز با طراحی مدرن و رابط کاربری ساده. تجربه‌ای لذت‌بخش برای پخش موزیک و ویدیوها.</p>
         <a href="https://tio.lv.tab.digital/s/7k3peKwAq2gNNYp" download class="download-btn">دانلود برنامه</a>
 
         <div class="features">
             <h2>ویژگی‌ها</h2>
             <ul>
                 <li>پخش فایل‌های صوتی و تصویری با کیفیت بالا</li>
-                <li>رابط کاربری ساده و کاربر پسند</li>
+                <li>رابط کاربری ساده و کاربرپسند</li>
                 <li>مدیریت آسان لیست پخش و آهنگ‌ها</li>
                 <li>سازگار با ویندوز 7، 8، 10 و 11</li>
             </ul>
@@ -110,7 +112,7 @@
         </div>
 
         <footer>
-            &copy; 2025 Player-Neo. All rights reserved.
+            &copy; 2025 Player-Neo. تمام حقوق محفوظ است.
         </footer>
     </div>
 </body>
